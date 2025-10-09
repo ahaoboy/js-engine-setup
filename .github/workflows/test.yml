@@ -1,0 +1,32 @@
+name: Test
+
+permissions:
+  contents: write
+
+on:
+  push:
+  pull_request:
+
+defaults:
+  run:
+    shell: bash --noprofile --norc -CeEuo pipefail {0}
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  rust-test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: run js-engine-run
+        uses: ./
+        with:
+          strip: true
+      - name: test
+        uses: |
+          ls -l ~/.ei
