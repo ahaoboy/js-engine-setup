@@ -5,6 +5,11 @@ branding:
   icon: play-circle
   color: white
 
+inputs:
+  strip:
+    description: "strip"
+    required: false
+
 runs:
   using: "composite"
   steps:
