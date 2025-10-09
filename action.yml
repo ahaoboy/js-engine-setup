@@ -127,4 +127,10 @@ runs:
       if: ${{ inputs.strip }}
       shell: bash
       run: |
-        bash ${{ github.action_path }}/strip.sh ${{ github.action_path }}/info.json
+        path="${{ github.action_path }}"
+
+        if [[ "$path" == *:* ]]; then
+          path=$(echo "$path" | sed 's#\\#/#g' | sed 's#^\([A-Za-z]\):#/\L\1#')
+        fi
+
+        bash  "$path/strip.sh" "$path/info.json"
