@@ -45,9 +45,9 @@ runs:
       run: |
         which ei
         urls=(
-          https://github.com/ahaoboy/easy-install/raw/refs/heads/main/dist-manifest/boa.json
+          https://github.com/boa-dev/boa
           https://github.com/ahaoboy/easy-install/raw/refs/heads/main/dist-manifest/llrt.json
-          https://github.com/ahaoboy/easy-install/raw/refs/heads/main/dist-manifest/hermes.json
+          https://github.com/facebook/hermes
           https://github.com/ahaoboy/easy-install/raw/refs/heads/main/dist-manifest/xst.json
           https://github.com/ahaoboy/txiki.js-build
           https://github.com/ahaoboy/spidermonkey-build
