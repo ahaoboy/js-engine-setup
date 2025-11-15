@@ -69,7 +69,7 @@ runs:
           https://github.com/ahaoboy/spiderfire-build
           https://github.com/ahaoboy/lo-build
           https://github.com/trynova/nova
-          https://nightly.link/andrewmd5/hako-cli/workflows/build/llvm
+          # https://nightly.link/andrewmd5/hako-cli/workflows/build/llvm
           https://github.com/ahaoboy/bare-build
           https://github.com/ahaoboy/rqjs-pgo-build
           https://github.com/ahaoboy/rhino-cli
