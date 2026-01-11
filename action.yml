@@ -73,6 +73,7 @@ runs:
           https://github.com/ahaoboy/bare-build
           https://github.com/ahaoboy/rqjs-pgo-build
           https://github.com/ahaoboy/rhino-cli
+          https://github.com/ahaoboy/paserati-build
         )
 
         for url in "${urls[@]}"; do
