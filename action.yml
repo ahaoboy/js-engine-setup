@@ -73,8 +73,10 @@ runs:
           https://github.com/ahaoboy/bare-build
           https://github.com/ahaoboy/rqjs-pgo-build
           https://github.com/ahaoboy/rhino-cli
-          https://github.com/ahaoboy/paserati-build
+          # https://github.com/ahaoboy/paserati-build
         )
+
+        ei https://github.com/nooga/paserati --alias paserati
 
         for url in "${urls[@]}"; do
           echo "install: $url"
