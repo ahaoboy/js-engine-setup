@@ -34,6 +34,8 @@ runs:
       shell: bash
       if: ${{ runner.os == 'Linux' }}
       run: |
+        sudo apt update -y
+        # https://github.com/just-js/lo?tab=readme-ov-file#linux
         sudo apt install -y libcurl4-openssl-dev libssl-dev zlib1g-dev
 
     - name: install easy-install
