@@ -73,6 +73,7 @@ runs:
           https://github.com/ahaoboy/rqjs-pgo-build
           https://github.com/ahaoboy/rhino-cli
           # https://github.com/ahaoboy/paserati-build
+          https://github.com/lucid-softworks/lumen/releases/tag/nightly
         )
 
         ei https://github.com/nooga/paserati --alias paserati
@@ -101,7 +102,6 @@ runs:
         ei https://github.com/ahaoboy/primjs-build --alias primjs
 
         ei https://github.com/ringo/ringojs/releases/download/v4.0.0/ringojs-4.0.0.tar.gz
-
     - name: install qjs-ng
       shell: bash
       run: |
