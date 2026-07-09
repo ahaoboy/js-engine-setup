@@ -74,6 +74,7 @@ runs:
           https://github.com/ahaoboy/rhino-cli
           # https://github.com/ahaoboy/paserati-build
           https://github.com/lucid-softworks/lumen/releases/tag/nightly
+          https://github.com/theMackabu/ant
         )
 
         ei https://github.com/nooga/paserati --alias paserati
