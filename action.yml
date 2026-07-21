@@ -54,7 +54,6 @@ runs:
           https://github.com/ahaoboy/jerryscript-build
           https://github.com/ahaoboy/mujs-build
           https://github.com/ahaoboy/mujs-one
-          https://github.com/ahaoboy/mujs-pgo-build
           https://github.com/ahaoboy/rquickjs-cli
           https://github.com/ahaoboy/ChakraCore-build
           https://github.com/ahaoboy/jsc-build
@@ -70,11 +69,11 @@ runs:
           https://github.com/trynova/nova
           # https://nightly.link/andrewmd5/hako-cli/workflows/build/llvm
           https://github.com/ahaoboy/bare-build
-          https://github.com/ahaoboy/rqjs-pgo-build
           https://github.com/ahaoboy/rhino-cli
           # https://github.com/ahaoboy/paserati-build
           https://github.com/lucid-softworks/lumen/releases/tag/nightly
           https://github.com/theMackabu/ant
+          https://github.com/ahaoboy/es5
         )
 
         ei https://github.com/nooga/paserati --alias paserati
