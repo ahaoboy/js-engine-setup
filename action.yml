@@ -74,6 +74,7 @@ runs:
           https://github.com/lucid-softworks/lumen/releases/tag/nightly
           https://github.com/theMackabu/ant
           https://github.com/ahaoboy/es5
+          https://github.com/robomotionio/goant
         )
 
         ei https://github.com/nooga/paserati --alias paserati
