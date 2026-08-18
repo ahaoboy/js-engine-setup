@@ -75,6 +75,7 @@ runs:
           https://github.com/theMackabu/ant
           https://github.com/ahaoboy/es5
           https://github.com/robomotionio/goant
+          https://github.com/aneryu/zjs
         )
 
         ei https://github.com/nooga/paserati --alias paserati
