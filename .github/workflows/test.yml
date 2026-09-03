@@ -30,3 +30,6 @@ jobs:
       - name: test
         run: |
           ls -l ~/.ei
+      - name: Run basic cyjs test
+        run: |
+          python -m cyjs -e "console.log('Hello');"
