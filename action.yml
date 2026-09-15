@@ -65,7 +65,7 @@ runs:
           https://github.com/ahaoboy/duktape-build
           https://github.com/ahaoboy/njs-build
           https://github.com/ahaoboy/spiderfire-build
-          https://github.com/ahaoboy/lo-build
+          https://github.com/just-js/lo
           https://github.com/trynova/nova
           # https://nightly.link/andrewmd5/hako-cli/workflows/build/llvm
           https://github.com/ahaoboy/bare-build
