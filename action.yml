@@ -85,10 +85,10 @@ runs:
           ei "$url"
         done
 
-    - name: chmod ant
-      shell: bash
-      run: |
-        chmod +x ~/.ei/ant/ant
+    # - name: chmod ant
+    #   shell: bash
+    #   run: |
+    #     chmod +x ~/.ei/ant/ant
 
     - name: install ladybird
       shell: bash
