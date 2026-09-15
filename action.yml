@@ -68,7 +68,7 @@ runs:
           https://github.com/just-js/lo
           https://github.com/trynova/nova
           # https://nightly.link/andrewmd5/hako-cli/workflows/build/llvm
-          https://github.com/ahaoboy/bare-build
+          https://github.com/easy-install/easy-install/releases/latest/download/bare.json
           https://github.com/ahaoboy/rhino-cli
           # https://github.com/ahaoboy/paserati-build
           https://github.com/lucid-softworks/lumen/releases/tag/nightly
