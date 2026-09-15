@@ -102,6 +102,13 @@ runs:
         bun i -g @engine262/engine262
         bun i -g quickjs-emscripten-cli
 
+    - name: install Linux
+      shell: bash
+      if: ${{ runner.os == 'Linux' }}
+      run: |
+        # `lo` built with musl cannot run in CI, so use the GNU version instead.
+        ei https://github.com/just-js/lo --target x86_64-unknown-linux-gnu
+
     - name: install unix
       shell: bash
       if: ${{ runner.os != 'Windows' }}
