@@ -76,6 +76,7 @@ runs:
           https://github.com/ahaoboy/es5
           https://github.com/robomotionio/goant
           https://github.com/aneryu/zjs
+          https://github.com/solarbrowser/quanta
         )
 
         ei https://github.com/nooga/paserati --alias paserati
