@@ -117,6 +117,11 @@ runs:
         ei https://github.com/ahaoboy/primjs-build --alias primjs
 
         ei https://github.com/ringo/ringojs/releases/download/v4.0.0/ringojs-4.0.0.tar.gz
+
+    - name: install qjs-oxide
+      shell: bash
+      run: |
+        ei https://github.com/pocket-nexus/quickjs-oxide --name qjs --alias quickjs-oxide
     - name: install qjs-ng
       shell: bash
       run: |
