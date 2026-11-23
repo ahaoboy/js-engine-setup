@@ -35,15 +35,9 @@ runs:
         # https://github.com/just-js/lo?tab=readme-ov-file#linux
         sudo apt install -y libcurl4-openssl-dev libssl-dev zlib1g-dev musl
 
-    - name: install easy-install
-      shell: bash
-      run: |
-        curl -fsSL https://raw.githubusercontent.com/easy-install/easy-install/main/install.sh | bash
-    - name: install from urls
-      shell: bash
-      run: |
-        which ei
-        urls=(
+    - uses: easy-install/easy-setup@v1
+      with:
+        url: |-
           https://github.com/boa-dev/boa
           https://github.com/ahaoboy/easy-install/raw/refs/heads/main/dist-manifest/llrt.json
           https://github.com/facebook/hermes
@@ -67,10 +61,8 @@ runs:
           https://github.com/ahaoboy/spiderfire-build
           https://github.com/just-js/lo
           https://github.com/trynova/nova
-          # https://nightly.link/andrewmd5/hako-cli/workflows/build/llvm
           https://raw.githubusercontent.com/easy-install/easy-install/main/dist-manifest/bare.json
           https://github.com/ahaoboy/rhino-cli
-          # https://github.com/ahaoboy/paserati-build
           https://github.com/lucid-softworks/lumen/releases/tag/nightly
           https://github.com/theMackabu/ant
           https://github.com/ahaoboy/es5
@@ -79,20 +71,9 @@ runs:
           https://github.com/aneryu/zjs
           https://github.com/solarbrowser/quanta
           https://github.com/liustack/slowjs
-        )
-
-        ei https://github.com/nooga/paserati --alias paserati
-
-        for url in "${urls[@]}"; do
-          echo "install: $url"
-          ei "$url"
-        done
-
-    # - name: chmod ant
-    #   shell: bash
-    #   run: |
-    #     chmod +x ~/.ei/ant/ant
-
+          https://github.com/pocket-nexus/quickjs-oxide --name qjs --alias quickjs-oxide
+          https://github.com/quickjs-ng/quickjs --name qjs --alias qjs-ng
+          https://github.com/ahaoboy/quickjs-build
     - name: install ladybird
       shell: bash
       if: ${{ runner.os != 'Windows' }}
@@ -120,18 +101,6 @@ runs:
 
         ei https://github.com/ringo/ringojs/releases/download/v4.0.0/ringojs-4.0.0.tar.gz
 
-    - name: install qjs-oxide
-      shell: bash
-      run: |
-        ei https://github.com/pocket-nexus/quickjs-oxide --name qjs --alias quickjs-oxide
-    - name: install qjs-ng
-      shell: bash
-      run: |
-        ei https://github.com/quickjs-ng/quickjs --name qjs --alias qjs-ng
-    - name: install qjs
-      shell: bash
-      run: |
-        ei https://github.com/ahaoboy/quickjs-build
     - name: install graaljs
       shell: bash
       run: |
