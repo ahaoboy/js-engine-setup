@@ -35,6 +35,18 @@ runs:
         # https://github.com/just-js/lo?tab=readme-ov-file#linux
         sudo apt install -y libcurl4-openssl-dev libssl-dev zlib1g-dev musl
 
+    - name: install libdwarf2 for ladybird
+      shell: bash
+      if: ${{ runner.os == 'Linux' }}
+      run: |
+        git clone https://github.com/davea42/libdwarf-code.git
+        cd libdwarf-code
+        mkdir build && cd build
+        cmake .. -DBUILD_SHARED=ON -DCMAKE_INSTALL_PREFIX=/usr/local
+        make -j$(nproc)
+        sudo make install
+        sudo ldconfig
+
     - uses: easy-install/easy-setup@v1
       with:
         url: |-
