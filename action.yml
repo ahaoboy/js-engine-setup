@@ -82,7 +82,7 @@ runs:
           https://github.com/robomotionio/goant
           https://github.com/aneryu/zjs
           https://github.com/solarbrowser/quanta
-          https://github.com/liustack/slowjs
+          https://github.com/liustack/beastjs
           https://github.com/pocket-nexus/quickjs-oxide --name qjs --alias quickjs-oxide
           https://github.com/quickjs-ng/quickjs --name qjs --alias qjs-ng
           https://github.com/ahaoboy/quickjs-build
