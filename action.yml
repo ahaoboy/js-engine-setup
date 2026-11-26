@@ -35,6 +35,9 @@ runs:
         # https://github.com/just-js/lo?tab=readme-ov-file#linux
         sudo apt install -y libcurl4-openssl-dev libssl-dev zlib1g-dev musl
 
+        # https://github.com/chakra-core/ChakraCore
+        sudo apt-get install -y git build-essential clang libicu- dev libidn-dev
+
     - name: install libdwarf2 for ladybird
       shell: bash
       if: ${{ runner.os == 'Linux' }}
