@@ -67,6 +67,7 @@ runs:
           https://github.com/ahaoboy/ChakraCore-build
           https://github.com/ahaoboy/jsc-build
           https://github.com/ahaoboy/goja-build
+          https://github.com/ahaoboy/ekuma-build
           https://github.com/ahaoboy/kiesel-build
           https://github.com/ahaoboy/mozjs-cli
           https://github.com/ahaoboy/jint-cli
