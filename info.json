@@ -347,6 +347,7 @@
   },
   {
     "name": "ekuma",
+    "install": "https://github.com/ahaoboy/ekuma-build",
     "description": "A JavaScript engine in pure Go",
     "url": "https://github.com/hajimehoshi/ekuma",
     "lang": "go"
